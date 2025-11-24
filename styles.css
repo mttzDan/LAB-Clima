@@ -1,0 +1,101 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #e3f2fd; /* azul claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.weather-container {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.weather-container h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #0d47a1; /* azul más fuerte */
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #0d47a1;
+}
+
+input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.4);
+}
+
+/* Botón */
+.btn-primary {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #1565c0;
+}
+
+/* Caja de resultados */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    border-left: 4px solid #1e88e5;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-box p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #0d47a1;
+}
+
+.result-box span {
+    font-weight: bold;
+    color: #0d47a1;
+}
